@@ -1,8 +1,43 @@
+//轮播实现
+$(".callback_tabs li").bind("click",function(){
+					if($(this).hasClass("callback_here")){
+						return;
+					}else{
+						var i=$(this).find("a").attr("data-target");
+						$(".callback_tabs").attr("data-li",i);
+						callback_here();
+					}
+				});
+				//	轮播实现
+				//setTimeout
+				function callback_here(){
+						var i=$(".callback_tabs").attr("data-li");
+						$("#callbacks li").removeClass("callback_here");
+						$(".callback_tabs li").removeClass("callback_here");
+						$("#callbacks li").eq(i).addClass("callback_here");
+						$(".callback_tabs li").eq(i).addClass("callback_here");
+						if(i==2){
+							i=0;
+						}else{
+							i++;
+						}
+						$(".callback_tabs").attr("data-li",i);
+						setTimeout("callback_here()", 5000);	
+				}
+
+				
+				$(function() {
+    				callback_here();
+    			})
+
+
+
+
 $(".show").click(function () {
-	if($(".shenkai")!=undefined){
-		$(".shenkai .lg_img").remove();
-		$(".shenkai").removeClass("shenkai");
-	} 
+	
+	$(".shenkai .lg_img").remove();
+	$(".shenkai").removeClass("shenkai");
+	
 	$(this).addClass("shenkai");
 	var lg_img = $("<div class='lg_img'><div class='container item_detail'><span>&times;</span><div class='left '><img src='' class='img-responsive'/></div><div class='right'><h1></h1><p></p></div></div></div>");
 	$(this).append(lg_img);
@@ -11,7 +46,8 @@ $(".show").click(function () {
 	$(".shenkai .right h1").html($(this).attr('data-h'));
 	$(".shenkai .right p").html($(this).attr('data-p'));
 	$(this).css("position","inherit");
-	$(".lg_img span").click(function stopDefault(e){
+	$(".lg_img span").click(function stopDefault(e) {
+//		console.log("++");
 		$(".shenkai .lg_img").remove();
 		$(".shenkai").removeClass("shenkai");
         //阻止默认浏览器动作(W3C)
@@ -52,7 +88,6 @@ myEvent(window,'load',function(){
 			var now=scrollTop;
 			var speed=(0-now)/10;
 			speed=speed>0?Math.ceil(speed):Math.floor(speed);
-			console.log(scrollTop);
 			if(scrollTop==0){
 				clearInterval(timer);
 			}
@@ -82,6 +117,4 @@ myEvent(window,'load',function(){
 		})(k);
 	}
 });
-
-
 

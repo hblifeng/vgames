@@ -9,26 +9,12 @@
 		<title>vgames官网</title>
 		<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.css"/>
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
-		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<!--[if lt IE 9]>   
 	      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 	      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     	<![endif]-->
-    	<style type="text/css">
-			.motion{
-			}
-			.motion li{
-				transition:margin-left 0.2s linear;
-			}
-			.motion li:hover{
-				margin-left: 30px;
-				
-				
-			}
-			@media only screen and (min-width: 480px) {
-				
-			}
-		</style>
+    	
 	</head>
 	<body>
 		
@@ -49,7 +35,7 @@
 					        <span class="icon-bar"></span>
 								</button>
 								<!--logo-->
-								<a href="index.html" class="navbar-brand"><img src="images/logo.png" /></a>
+								<a href="index.html" class="navbar-brand"><img src="img/logo.png" /></a>
 							</div>
 							<!--右侧导航-->
 							<div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
@@ -82,7 +68,7 @@
 			<div class="banner-title">
 				<div id="info" class="callback_containers">
 					<ul class="callbacks" id="callbacks">
-						<li>
+						<li class="callback_here">
 							<h3>便捷的场地管理</h3>
 							<p>"场地预订订场实时查看，轻松上线场馆商品，随时随地查看运营数据，不需下载app，直接微信就可以管理场地。"</p>
 						</li>
@@ -95,15 +81,15 @@
 							<p>"我们提供丰富的运动笔记功能，每天一条，打造完全属于你的运动空间。"</p>
 						</li>
 					</ul>
-					<ul class="callback_tabs">
-						<li>
-							<a href="#"></a>
+					<ul class="callback_tabs" data-li="0">
+						<li class="callback_here">
+							<a href="#" data-target="0"></a>
 						</li>
 						<li>
-							<a href="#"></a>
+							<a href="#" data-target="1"></a>
 						</li>
 						<li>
-							<a href="#"></a>
+							<a href="#" data-target="2"></a>
 						</li>
 					</ul>
 				</div>
@@ -117,18 +103,18 @@
 					<img class="img-responsive col-md-12 col-xs-12" src="img/img1.jpg"/>
 				</div>
 				<div class="col-md-6 col-sm-12 col-xs-7">
-					<h1 class="col-md-12 col-sm-12 col-xs-12">关于 君赛</h1>
+					<h1 class="col-md-12 col-sm-12 col-xs-12" style="margin:1em 0">关于 君赛</h1>
 					<p  class="col-md-12 col-sm-12 col-xs-12">君赛是一家年轻的公司，我们成立的目的是希望每个人都可以有一个健康的体魄，希望让运动成为一种生活，在您通往运动场的每个环节我们都竭诚为您服务，我们存在的价值在于我们还能为社会做些贡献，在中国民间体育运动的发展过程中，我们希望贡献一份自己的力量，与合作伙伴一道共同推动中国体育运动的发展。</p>
 				</div>
 			</div>
 			<div class="row" id="service">
 				<div class="col-md-4 col-sm-12 col-xs-4">
-					<h1>服务</h1>
+					<h1 style="margin:1em 0">服务</h1>
 					<ul class="list-unstyled motion">
-						<li>运动场地管理</li>
-						<li>运动场地预订</li>
-						<li>在线商品销售</li>
-						<li>运动品牌推广</li>
+						<li><span class="glyphicon glyphicon-arrow-right color"></span> <span class="move"> 运动场地管理</span></li> 
+						<li><span class="glyphicon glyphicon-arrow-right color"></span> <span class="move"> 运动场地预订</span></li>
+						<li><span class="glyphicon glyphicon-arrow-right color"></span> <span class="move"> 在线商品销售</span></li>
+						<li><span class="glyphicon glyphicon-arrow-right color"></span> <span class="move"> 运动品牌推广</span></li>
 					</ul>
 				</div>
 				<div class="col-md-8 col-sm-12 col-xs-8">
@@ -136,14 +122,14 @@
 						<div class="col-md-6 col-sm-12 col-xs-6">
 							<div class="row">
 								<img class="col-md-12 col-sm-12 img-responsive" src="img/img2.jpg"/>
-								<h3 class="col-md-12 col-sm-12">让运动成为一种生活</h3>
+								<h3 class="col-md-12 col-sm-12" style="margin:1em 0">让运动成为一种生活</h3>
 								<p class="col-md-12 col-sm-12">让周末不再是餐桌、影院、办公室，让运动充满快乐，让健康不再是买保健品，让我们做点更有意义的事情，让运动成为一种生活。</p>
 							</div>
 						</div>
 						<div class="col-md-6 col-sm-12 col-xs-6">
 							<div class="row">
 								<img class="col-md-12 col-sm-12 col-xs-12 img-responsive" src="img/img3.jpg"/>
-								<h3 class="col-md-12 col-sm-12 col-xs-12">改变自己　改变未来</h3>
+								<h3 class="col-md-12 col-sm-12 col-xs-12" style="margin:1em 0">改变自己　改变未来</h3>
 								<p class="col-md-12 col-sm-12 col-xs-12">周末带着老婆、孩子参加、观看一场社区比赛，让我们的孩子从小明白什么是规则，什么是竞争，什么是汗水，什么是泪水，什么是跌倒后再站起来，这是我们要培养的下一代，我们相信未来应该是这样的。</p>
 							</div>
 						</div>
@@ -281,35 +267,49 @@
 			</div>
 		</div>
 
-		<!--联系-->
-		<div class="footer" id="aboutus" style="width:100%;height:auto;background:rgb(92,189,244);">			
+	<!--联系-->
+		<div class="footer" id="aboutus">			
 			<div class="container">
-				<!--第一行-->
-				<div class="row">
-					<h1 class="text-center" style="color:white">联系我们</h1>
+				<div >
+					<h1>联系我们</h1>
 				</div>
-				
-				<!--第二行-->
-				<div class="row">
-					<div class="col-md-7">
-						<form action="" class="">
-							<input type="text" id="user" value="姓名" onfocus="this.value=''" onblur="this.value='姓名'" required=""/>
-							<input type="text" id="email" value="邮箱" onfocus="this.value=''" onblur="this.value='邮箱'" required=""/>
-							<input type="text" id="tel" value="手机" onfocus="this.value=''" onblur="this.value='手机'" required=""/>
-							<textarea type="text" onfocus="this.value=''" onblur="this.value='您的宝贵意见...'" required="">您的宝贵意见...</textarea>
-							<input type="submit" value="提交" onclick="submit()"/>
-						</form>
+				<form action="">
+						<div class="row">
+							<div class="info1 col-xs-12 col-sm-12 col-md-7">
+								<div class="row">
+									<div class="col-xs-12 col-sm-4 info">
+										<input type="text" class="form-control" placeholder="姓名" required="required" />
+									</div>
+									<div class="col-xs-12 col-sm-4 info">
+										<input type="email"  class="form-control" placeholder="邮箱" required="required" />
+									</div>
+									<div class="col-xs-12 col-sm-4 info"> 
+										<input type="text"  class="form-control" placeholder="手机" required="required" />
+									</div>
+									
+								</div>
+								<div class="row">
+										<div class="col-xs-12">
+											<textarea class="form-control"  rows="10"  placeholder="您的宝贵意见..." required="required"></textarea>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12">
+										<button id = "btn" type="submit">提交</button>
+									</div>
+								</div>
+							</div>
+						<div class="info2 col-xs-12 col-sm-12 col-md-5" >
+							<p>上海君赛信息科技有限责任公司</p>
+							<p>地址：上海市浦东新区盛夏路560号</p>
+							<p>电话 : 400-6161-731</p>
+							<p>Email : junsie@163.com</p>
+						</div>
 					</div>
-					
-					<div class="col-md-5" style="color:white">
-						<p>上海君赛信息科技有限责任公司</p>
-						<p>地址：上海市浦东新区盛夏路560号</p>
-						<p>电话 : 400-6161-731</p>
-						<p>Email :<a href="mailto:junsie@163.com" style="text-decoration:none;color:white">junsie@163.com</a></p>
-					</div>
-				</div>
+				</form>
 			</div>	
 		</div>
+
 
 		<!--返回顶部-->
 		<a id="rtt"><img src="http://www.vgames.cc/images/move-up.png"/></a>
@@ -320,31 +320,19 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script type="text/javascript" src="bootstrap/bootstrap.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script> 
     <script type="text/javascript">
-				var i=0;
-				$(window).scroll(function(){
-					
-				});
-				
-				//	轮播实现
-				//setTimeout
-				function callback_here(){
-					$("#callbacks li").removeClass("callback_here");
-					$(".callback_tabs li").removeClass("callback_here");
-					$("#callbacks li").eq(i).addClass("callback_here");
-					$(".callback_tabs li").eq(i).addClass("callback_here");
-					if(i==2){
-						i=0;
-					}else{
-						i++;
-					}
-					setTimeout("callback_here()", 5000);
-				}
-				
-				$(function() {
-    				callback_here();
-    			})
-	</script>   	
+    	$(window).resize(function() { 
+			browser_width = $(document.body).width(); 
+			if((browser_width)<470){
+				$(".info").removeClass("col-xs-4")
+				$(".info").addClass("col-xs-12");
+			}else{
+				$(".info").removeClass("col-xs-12")
+				$(".info").addClass("col-xs-4");
+			}
+			}); 
+
+    </script>
 	</body>
 </html>
